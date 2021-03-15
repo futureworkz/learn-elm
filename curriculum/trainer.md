@@ -157,14 +157,18 @@ Tell student to implement a button "Load Text"
 and then it will call the HTTP to load the text.
 `https://elm-lang.org/assets/public-opinion.txt`
 
-Work with the student to create the ApiResponse type:
+Trainer do take note that this is a more challenging exercise.
+
+Work with the student to create the ApiResponse type
 ```elm
-type ApiResponse =
-  Ready
+type ApiResponse
+  = Ready
   | Loading
   | Success String
   | Fail String
 ```
+
+and explain how the entire process will be like first.
 
 Skip JSON section and focus on Random and Time first
 to allow student to have a firm grasp on `Cmd msg` and `Sub msg`
@@ -193,7 +197,7 @@ Optional: Install `ryannhg/date-format` to format the date
 # JavaScript Interop
 Go through it quickly
 
-Watch Life of a File: 
+Watch Life of a File:
 `https://www.youtube.com/watch?v=XpDsk374LDE&feature=youtu.be`
 
 # Web Apps
@@ -207,15 +211,16 @@ Ask student to update the app to have the following pages:
 Inform student to refer to their Route exercise
 
 ## URL Parsing
-We don't use this package
-but students are free to learn it themselves
+
+Go through the guide and documentation and ask student 
+to update their route in the app to consume this library
 
 ## Modules
 ## Structure
 To discuss with students
 Using User exercise, share with student the idea of Data Type files
 
-# Final Exercise:
+## Final Exercise (Optional):
 - Login a user with an API
 - Name, Email, Password, Gender (optional)
 - Display emall is taken error
@@ -224,7 +229,7 @@ Using User exercise, share with student the idea of Data Type files
 * An API for Registeration?
 https://exercism.io/tracks/elm
 
-# Additional Readings
+## Additional Readings
 - https://elm-lang.org/docs/syntax
 - Opaque Types: `https://medium.com/@ghivert/designing-api-in-elm-opaque-types-ce9d5f113033`
 - Phantom Types: `https://thoughtbot.com/blog/modeling-currency-in-elm-using-phantom-types`
